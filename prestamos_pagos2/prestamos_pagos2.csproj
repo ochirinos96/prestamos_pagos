@@ -100,6 +100,12 @@
     <Compile Include="interfaces\frm_gestion_personal.Designer.cs">
       <DependentUpon>frm_gestion_personal.cs</DependentUpon>
     </Compile>
+    <Compile Include="interfaces\frm_pagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="interfaces\frm_pagos.Designer.cs">
+      <DependentUpon>frm_pagos.cs</DependentUpon>
+    </Compile>
     <Compile Include="interfaces\frm_registro_articulos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="interfaces\frm_gestion_personal.resx">
       <DependentUpon>frm_gestion_personal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="interfaces\frm_pagos.resx">
+      <DependentUpon>frm_pagos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="interfaces\frm_registro_articulos.resx">
       <DependentUpon>frm_registro_articulos.cs</DependentUpon>

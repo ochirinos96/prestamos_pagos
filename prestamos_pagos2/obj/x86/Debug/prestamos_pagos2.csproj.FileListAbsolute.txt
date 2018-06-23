@@ -92,3 +92,6 @@ E:\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.csproj.CoreC
 E:\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.csproj.CopyComplete
 E:\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.exe
 E:\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.pdb
+C:\Users\Omar Chirinos\Source\Repos\prestamos_pagos\prestamos_pagos2\bin\Debug\prestamos_pagos2.exe.config
+C:\Users\Omar Chirinos\Source\Repos\prestamos_pagos\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.exe
+C:\Users\Omar Chirinos\Source\Repos\prestamos_pagos\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.pdb
