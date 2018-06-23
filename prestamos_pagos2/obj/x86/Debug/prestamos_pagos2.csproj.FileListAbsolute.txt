@@ -1,0 +1,94 @@
+c:\users\user\source\repos\prestamos_pagos2\prestamos_pagos2\bin\Debug\prestamos_pagos2.exe.config
+c:\users\user\source\repos\prestamos_pagos2\prestamos_pagos2\bin\Debug\prestamos_pagos2.exe
+c:\users\user\source\repos\prestamos_pagos2\prestamos_pagos2\bin\Debug\prestamos_pagos2.pdb
+c:\users\user\source\repos\prestamos_pagos2\prestamos_pagos2\bin\Debug\Telerik.WinControls.dll
+c:\users\user\source\repos\prestamos_pagos2\prestamos_pagos2\bin\Debug\Telerik.WinControls.Themes.TelerikMetro.dll
+c:\users\user\source\repos\prestamos_pagos2\prestamos_pagos2\bin\Debug\Telerik.WinControls.UI.dll
+c:\users\user\source\repos\prestamos_pagos2\prestamos_pagos2\bin\Debug\TelerikCommon.dll
+c:\users\user\source\repos\prestamos_pagos2\prestamos_pagos2\bin\Debug\Telerik.WinControls.xml
+c:\users\user\source\repos\prestamos_pagos2\prestamos_pagos2\bin\Debug\Telerik.WinControls.UI.xml
+c:\users\user\source\repos\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.csprojAssemblyReference.cache
+c:\users\user\source\repos\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frmprincipal.resources
+c:\users\user\source\repos\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frm_registro_cliente.resources
+c:\users\user\source\repos\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.Properties.Resources.resources
+c:\users\user\source\repos\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.csproj.GenerateResource.cache
+c:\users\user\source\repos\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.exe.licenses
+c:\users\user\source\repos\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.csproj.CoreCompileInputs.cache
+c:\users\user\source\repos\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.csproj.CopyComplete
+c:\users\user\source\repos\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.exe
+c:\users\user\source\repos\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.pdb
+C:\Users\USER\source\repos\prestamos_pagos2\prestamos_pagos2\bin\Debug\Telerik.WinControls.GridView.dll
+C:\Users\USER\source\repos\prestamos_pagos2\prestamos_pagos2\bin\Debug\Telerik.WinControls.RichTextEditor.dll
+C:\Users\USER\source\repos\prestamos_pagos2\prestamos_pagos2\bin\Debug\Telerik.WinControls.GridView.xml
+C:\Users\USER\source\repos\prestamos_pagos2\prestamos_pagos2\bin\Debug\Telerik.WinControls.RichTextEditor.xml
+C:\Users\USER\source\repos\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frm_gestion_articulos.resources
+C:\Users\USER\source\repos\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frm_gestion_cliente.resources
+C:\Users\USER\source\repos\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frm_gestion_contrato.resources
+C:\Users\USER\source\repos\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frm_gestion_negocio.resources
+C:\Users\USER\source\repos\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frm_gestion_personal.resources
+C:\Users\USER\source\repos\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frm_registro_articulos.resources
+C:\Users\USER\source\repos\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frm_registro_contrato.resources
+C:\Users\USER\source\repos\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frm_registro_negocio.resources
+C:\Users\USER\source\repos\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frm_registro_personal.resources
+C:\Users\USER\source\repos\prestamos_pagos2\prestamos_pagos2\bin\Debug\Telerik.WinControls.Themes.Windows8.dll
+C:\Users\USER\source\repos\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.main.resources
+C:\Users\Omar Chirinos\Desktop\prestamos_pagos2\prestamos_pagos2\bin\Debug\prestamos_pagos2.exe.config
+C:\Users\Omar Chirinos\Desktop\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.exe
+C:\Users\Omar Chirinos\Desktop\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.pdb
+C:\Users\Omar Chirinos\Desktop\prestamos_pagos2\prestamos_pagos2\bin\Debug\prestamos_pagos2.exe
+C:\Users\Omar Chirinos\Desktop\prestamos_pagos2\prestamos_pagos2\bin\Debug\prestamos_pagos2.pdb
+C:\Users\Omar Chirinos\Desktop\prestamos_pagos2\prestamos_pagos2\bin\Debug\Telerik.WinControls.dll
+C:\Users\Omar Chirinos\Desktop\prestamos_pagos2\prestamos_pagos2\bin\Debug\Telerik.WinControls.UI.dll
+C:\Users\Omar Chirinos\Desktop\prestamos_pagos2\prestamos_pagos2\bin\Debug\TelerikCommon.dll
+C:\Users\Omar Chirinos\Desktop\prestamos_pagos2\prestamos_pagos2\bin\Debug\Telerik.WinControls.xml
+C:\Users\Omar Chirinos\Desktop\prestamos_pagos2\prestamos_pagos2\bin\Debug\Telerik.WinControls.UI.xml
+C:\Users\Omar Chirinos\Desktop\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.csprojResolveAssemblyReference.cache
+C:\Users\Omar Chirinos\Desktop\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frmprincipal.resources
+C:\Users\Omar Chirinos\Desktop\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frm_gestion_articulos.resources
+C:\Users\Omar Chirinos\Desktop\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frm_gestion_cliente.resources
+C:\Users\Omar Chirinos\Desktop\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frm_gestion_contrato.resources
+C:\Users\Omar Chirinos\Desktop\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frm_gestion_negocio.resources
+C:\Users\Omar Chirinos\Desktop\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frm_gestion_personal.resources
+C:\Users\Omar Chirinos\Desktop\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frm_registro_articulos.resources
+C:\Users\Omar Chirinos\Desktop\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frm_registro_cliente.resources
+C:\Users\Omar Chirinos\Desktop\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frm_registro_contrato.resources
+C:\Users\Omar Chirinos\Desktop\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frm_registro_negocio.resources
+C:\Users\Omar Chirinos\Desktop\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frm_registro_personal.resources
+C:\Users\Omar Chirinos\Desktop\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.main.resources
+C:\Users\Omar Chirinos\Desktop\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.Properties.Resources.resources
+C:\Users\Omar Chirinos\Desktop\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.csproj.GenerateResource.Cache
+C:\Users\Omar Chirinos\Desktop\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.exe.licenses
+E:\prestamos_pagos2\prestamos_pagos2\bin\Debug\prestamos_pagos2.exe.config
+E:\prestamos_pagos2\prestamos_pagos2\bin\Debug\prestamos_pagos2.exe
+E:\prestamos_pagos2\prestamos_pagos2\bin\Debug\prestamos_pagos2.pdb
+E:\prestamos_pagos2\prestamos_pagos2\bin\Debug\Telerik.WinControls.dll
+E:\prestamos_pagos2\prestamos_pagos2\bin\Debug\Telerik.WinControls.GridView.dll
+E:\prestamos_pagos2\prestamos_pagos2\bin\Debug\Telerik.WinControls.RichTextEditor.dll
+E:\prestamos_pagos2\prestamos_pagos2\bin\Debug\Telerik.WinControls.Themes.TelerikMetro.dll
+E:\prestamos_pagos2\prestamos_pagos2\bin\Debug\Telerik.WinControls.Themes.Windows8.dll
+E:\prestamos_pagos2\prestamos_pagos2\bin\Debug\Telerik.WinControls.UI.dll
+E:\prestamos_pagos2\prestamos_pagos2\bin\Debug\TelerikCommon.dll
+E:\prestamos_pagos2\prestamos_pagos2\bin\Debug\Telerik.WinControls.xml
+E:\prestamos_pagos2\prestamos_pagos2\bin\Debug\Telerik.WinControls.GridView.xml
+E:\prestamos_pagos2\prestamos_pagos2\bin\Debug\Telerik.WinControls.RichTextEditor.xml
+E:\prestamos_pagos2\prestamos_pagos2\bin\Debug\Telerik.WinControls.UI.xml
+E:\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.csprojAssemblyReference.cache
+E:\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frmprincipal.resources
+E:\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frm_gestion_articulos.resources
+E:\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frm_gestion_cliente.resources
+E:\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frm_gestion_contrato.resources
+E:\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frm_gestion_negocio.resources
+E:\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frm_gestion_personal.resources
+E:\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frm_registro_articulos.resources
+E:\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frm_registro_cliente.resources
+E:\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frm_registro_contrato.resources
+E:\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frm_registro_negocio.resources
+E:\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.frm_registro_personal.resources
+E:\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.main.resources
+E:\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.Properties.Resources.resources
+E:\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.csproj.GenerateResource.cache
+E:\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.exe.licenses
+E:\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.csproj.CoreCompileInputs.cache
+E:\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.csproj.CopyComplete
+E:\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.exe
+E:\prestamos_pagos2\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.pdb
