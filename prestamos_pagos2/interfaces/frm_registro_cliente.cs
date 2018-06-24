@@ -275,7 +275,7 @@ namespace prestamos_pagos2.interfaces
 
 
             string genero;
-            if (radioButton1.Checked == true)
+            if (radioButton4.Checked = true)
             {
                 genero = "M";
             }

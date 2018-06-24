@@ -11,27 +11,28 @@ namespace prestamos_pagos2.interfaces
 {
     public partial class frm_registro_negocio : Telerik.WinControls.UI.RadForm
     {
+        public string dni_login;
         public frm_registro_negocio()
         {
             InitializeComponent();
         }
+        public frm_registro_negocio(string login)
+        {
+            InitializeComponent();
+            dni_login = login;
+        }
 
-        private void label21_Click(object sender, EventArgs e)
+        private void radButton1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void radTextBox21_TextChanged(object sender, EventArgs e)
+        private void radButton2_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label22_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radTextBox22_TextChanged(object sender, EventArgs e)
+        private void radTextBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

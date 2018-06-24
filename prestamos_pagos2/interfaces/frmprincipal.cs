@@ -42,5 +42,12 @@ namespace prestamos_pagos2.interfaces
             cliente.MdiParent = this;
             cliente.Show();
         }
+
+        private void radButtonElement3_Click(object sender, EventArgs e)
+        {
+            frm_registro_negocio cliente = new frm_registro_negocio(dni_login);
+            cliente.MdiParent = this;
+            cliente.Show();
+        }
     }
 }

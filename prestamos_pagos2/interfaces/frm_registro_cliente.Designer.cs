@@ -66,6 +66,11 @@
             this.radTextBox1 = new Telerik.WinControls.UI.RadTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.radGroupBox1 = new Telerik.WinControls.UI.RadGroupBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label28 = new System.Windows.Forms.Label();
@@ -100,11 +105,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
             this.telerikMetroTheme1 = new Telerik.WinControls.Themes.TelerikMetroTheme();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radButton5)).BeginInit();
@@ -125,6 +125,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).BeginInit();
             this.radGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radButton3)).BeginInit();
@@ -142,7 +143,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -553,6 +553,44 @@
             this.tabPage2.Text = "Datos Familiares";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.column1,
+            this.column2,
+            this.column3,
+            this.column4});
+            this.dataGridView1.Location = new System.Drawing.Point(407, 18);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 28;
+            this.dataGridView1.Size = new System.Drawing.Size(372, 399);
+            this.dataGridView1.TabIndex = 41;
+            // 
+            // column1
+            // 
+            this.column1.HeaderText = "DNI";
+            this.column1.Name = "column1";
+            // 
+            // column2
+            // 
+            this.column2.HeaderText = "Nombres";
+            this.column2.Name = "column2";
+            this.column2.Width = 200;
+            // 
+            // column3
+            // 
+            this.column3.HeaderText = "Apellidos";
+            this.column3.Name = "column3";
+            this.column3.Width = 200;
+            // 
+            // column4
+            // 
+            this.column4.HeaderText = "Telefono";
+            this.column4.Name = "column4";
+            // 
             // radGroupBox1
             // 
             this.radGroupBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
@@ -910,44 +948,6 @@
             this.radLabel1.Text = "Registro de Clientes";
             this.radLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.column1,
-            this.column2,
-            this.column3,
-            this.column4});
-            this.dataGridView1.Location = new System.Drawing.Point(407, 18);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(372, 399);
-            this.dataGridView1.TabIndex = 41;
-            // 
-            // column1
-            // 
-            this.column1.HeaderText = "DNI";
-            this.column1.Name = "column1";
-            // 
-            // column2
-            // 
-            this.column2.HeaderText = "Nombres";
-            this.column2.Name = "column2";
-            this.column2.Width = 200;
-            // 
-            // column3
-            // 
-            this.column3.HeaderText = "Apellidos";
-            this.column3.Name = "column3";
-            this.column3.Width = 200;
-            // 
-            // column4
-            // 
-            this.column4.HeaderText = "Telefono";
-            this.column4.Name = "column4";
-            // 
             // frm_registro_cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -984,6 +984,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox1)).EndInit();
             this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).EndInit();
             this.radGroupBox1.ResumeLayout(false);
             this.radGroupBox1.PerformLayout();
@@ -1002,7 +1003,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
