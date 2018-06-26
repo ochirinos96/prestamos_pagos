@@ -130,3 +130,6 @@ C:\Users\USER\source\repos\NewRepo\prestamos_pagos\prestamos_pagos2\obj\x86\Debu
 C:\Users\USER\source\repos\NewRepo\prestamos_pagos\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.csproj.CopyComplete
 C:\Users\USER\source\repos\NewRepo\prestamos_pagos\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.exe
 C:\Users\USER\source\repos\NewRepo\prestamos_pagos\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.pdb
+C:\Users\Miguel\Source\Repos\prestamos_pagos\prestamos_pagos2\bin\Debug\prestamos_pagos2.exe.config
+C:\Users\Miguel\Source\Repos\prestamos_pagos\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.exe
+C:\Users\Miguel\Source\Repos\prestamos_pagos\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.pdb
