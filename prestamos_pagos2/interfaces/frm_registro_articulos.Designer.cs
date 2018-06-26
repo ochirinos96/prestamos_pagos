@@ -31,6 +31,7 @@
             this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.radTextBox5 = new Telerik.WinControls.UI.RadTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.radTextBox4 = new Telerik.WinControls.UI.RadTextBox();
@@ -44,7 +45,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.radTextBox1 = new Telerik.WinControls.UI.RadTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -82,6 +83,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.radioButton1);
             this.tabPage1.Controls.Add(this.checkBox1);
             this.tabPage1.Controls.Add(this.radTextBox5);
             this.tabPage1.Controls.Add(this.label6);
@@ -96,19 +98,29 @@
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.radTextBox1);
             this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1168, 468);
+            this.tabPage1.Size = new System.Drawing.Size(1168, 461);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Registrar Articulo";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(386, 21);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(116, 27);
+            this.checkBox1.TabIndex = 69;
+            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // radTextBox5
             // 
             this.radTextBox5.Location = new System.Drawing.Point(403, 256);
             this.radTextBox5.Name = "radTextBox5";
-            this.radTextBox5.Size = new System.Drawing.Size(474, 20);
+            this.radTextBox5.Size = new System.Drawing.Size(474, 27);
             this.radTextBox5.TabIndex = 68;
             this.radTextBox5.ThemeName = "TelerikMetro";
             // 
@@ -117,7 +129,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(257, 262);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 13);
+            this.label6.Size = new System.Drawing.Size(124, 23);
             this.label6.TabIndex = 67;
             this.label6.Text = "Observaciones:";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -126,7 +138,7 @@
             // 
             this.radTextBox4.Location = new System.Drawing.Point(403, 66);
             this.radTextBox4.Name = "radTextBox4";
-            this.radTextBox4.Size = new System.Drawing.Size(474, 20);
+            this.radTextBox4.Size = new System.Drawing.Size(474, 27);
             this.radTextBox4.TabIndex = 66;
             this.radTextBox4.ThemeName = "TelerikMetro";
             // 
@@ -135,7 +147,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(320, 72);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 13);
+            this.label5.Size = new System.Drawing.Size(69, 23);
             this.label5.TabIndex = 65;
             this.label5.Text = "Codigo:";
             // 
@@ -153,7 +165,7 @@
             this.radDateTimePicker2.CalendarSize = new System.Drawing.Size(300, 300);
             this.radDateTimePicker2.Location = new System.Drawing.Point(403, 218);
             this.radDateTimePicker2.Name = "radDateTimePicker2";
-            this.radDateTimePicker2.Size = new System.Drawing.Size(474, 20);
+            this.radDateTimePicker2.Size = new System.Drawing.Size(474, 27);
             this.radDateTimePicker2.TabIndex = 63;
             this.radDateTimePicker2.TabStop = false;
             this.radDateTimePicker2.Text = "lunes, 4 de junio de 2018";
@@ -165,7 +177,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(268, 224);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 13);
+            this.label4.Size = new System.Drawing.Size(121, 23);
             this.label4.TabIndex = 10;
             this.label4.Text = "Fecha compra:";
             // 
@@ -173,7 +185,7 @@
             // 
             this.radTextBox3.Location = new System.Drawing.Point(403, 180);
             this.radTextBox3.Name = "radTextBox3";
-            this.radTextBox3.Size = new System.Drawing.Size(474, 20);
+            this.radTextBox3.Size = new System.Drawing.Size(474, 27);
             this.radTextBox3.TabIndex = 14;
             this.radTextBox3.ThemeName = "TelerikMetro";
             // 
@@ -182,7 +194,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(265, 184);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 13);
+            this.label3.Size = new System.Drawing.Size(128, 23);
             this.label3.TabIndex = 11;
             this.label3.Text = "Valor Contable:";
             // 
@@ -190,7 +202,7 @@
             // 
             this.radTextBox2.Location = new System.Drawing.Point(403, 142);
             this.radTextBox2.Name = "radTextBox2";
-            this.radTextBox2.Size = new System.Drawing.Size(474, 20);
+            this.radTextBox2.Size = new System.Drawing.Size(474, 27);
             this.radTextBox2.TabIndex = 15;
             this.radTextBox2.ThemeName = "TelerikMetro";
             // 
@@ -199,7 +211,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(306, 146);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 13);
+            this.label2.Size = new System.Drawing.Size(77, 23);
             this.label2.TabIndex = 12;
             this.label2.Text = "Nombre:";
             // 
@@ -207,7 +219,7 @@
             // 
             this.radTextBox1.Location = new System.Drawing.Point(403, 104);
             this.radTextBox1.Name = "radTextBox1";
-            this.radTextBox1.Size = new System.Drawing.Size(474, 20);
+            this.radTextBox1.Size = new System.Drawing.Size(474, 27);
             this.radTextBox1.TabIndex = 9;
             this.radTextBox1.ThemeName = "TelerikMetro";
             // 
@@ -216,28 +228,29 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(313, 110);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 13);
+            this.label1.Size = new System.Drawing.Size(75, 23);
             this.label1.TabIndex = 8;
             this.label1.Text = "N° Serie:";
             // 
-            // checkBox1
+            // radioButton1
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(557, 21);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
-            this.checkBox1.TabIndex = 69;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(582, 21);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(135, 27);
+            this.radioButton1.TabIndex = 70;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "radioButton1";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // frm_registro_articulos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1243, 616);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.radLabel1);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frm_registro_articulos";
             // 
             // 
@@ -280,5 +293,6 @@
         private System.Windows.Forms.Label label5;
         private Telerik.WinControls.UI.RadButton radButton1;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }
