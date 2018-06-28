@@ -56,5 +56,15 @@ namespace prestamos_pagos2.interfaces
             cliente.MdiParent = this;
             cliente.Show();
         }
+
+        private void radButtonElement5_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void frmprincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

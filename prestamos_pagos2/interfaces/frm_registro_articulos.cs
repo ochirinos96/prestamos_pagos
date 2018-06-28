@@ -20,6 +20,15 @@ namespace prestamos_pagos2.interfaces
         {
             InitializeComponent();
         }
+        public string dni_login;
+        public frm_registro_articulos(string dni_log)
+        {
+
+            InitializeComponent();
+            dni_login = dni_log;
+
+        }
+
 
         private void label6_Click(object sender, EventArgs e)
         {
@@ -103,6 +112,11 @@ namespace prestamos_pagos2.interfaces
                 return;
             textBox1.Text = examinar.FileName;
             pictureBox1.Image = Image.FromFile(examinar.FileName);
+        }
+
+        private void radTextBox9_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
