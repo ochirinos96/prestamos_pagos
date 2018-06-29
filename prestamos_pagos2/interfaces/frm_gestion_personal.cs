@@ -15,5 +15,16 @@ namespace prestamos_pagos2.interfaces
         {
             InitializeComponent();
         }
+        public string dni_login;
+        public frm_gestion_personal(string login)
+        {
+            InitializeComponent();
+            dni_login = login;
+        }
+
+        private void radButton3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
