@@ -211,9 +211,9 @@
             // textBox1
             // 
             this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(728, 298);
+            this.textBox1.Location = new System.Drawing.Point(838, 298);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(247, 26);
+            this.textBox1.Size = new System.Drawing.Size(28, 26);
             this.textBox1.TabIndex = 21;
             this.textBox1.Text = "Foto\\default_image.png";
             // 

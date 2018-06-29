@@ -66,5 +66,19 @@ namespace prestamos_pagos2.interfaces
         {
             Application.Exit();
         }
+
+        private void radButtonElement6_Click(object sender, EventArgs e)
+        {
+            frm_registro_personal personal = new frm_registro_personal(dni_login);
+            personal.MdiParent = this;
+            personal.Show();
+        }
+
+        private void radButtonElement7_Click(object sender, EventArgs e)
+        {
+            frm_gestion_personal personal = new frm_gestion_personal(dni_login);
+            personal.MdiParent = this;
+            personal.Show();
+        }
     }
 }
