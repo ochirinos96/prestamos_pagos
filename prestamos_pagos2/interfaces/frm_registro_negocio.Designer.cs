@@ -34,16 +34,8 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.radGroupBox2 = new Telerik.WinControls.UI.RadGroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.radGroupBox1 = new Telerik.WinControls.UI.RadGroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
             this.radTextBox1 = new Telerik.WinControls.UI.RadTextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -95,6 +87,14 @@
             this.label18 = new System.Windows.Forms.Label();
             this.radTextBox18 = new Telerik.WinControls.UI.RadTextBox();
             this.telerikMetroTheme1 = new Telerik.WinControls.Themes.TelerikMetroTheme();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -138,11 +138,11 @@
             // 
             this.radLabel1.AutoSize = false;
             this.radLabel1.BackColor = System.Drawing.Color.LimeGreen;
-            this.radLabel1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radLabel1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radLabel1.ForeColor = System.Drawing.Color.White;
-            this.radLabel1.Location = new System.Drawing.Point(-2, 12);
+            this.radLabel1.Location = new System.Drawing.Point(4, 12);
             this.radLabel1.Name = "radLabel1";
-            this.radLabel1.Size = new System.Drawing.Size(1320, 51);
+            this.radLabel1.Size = new System.Drawing.Size(954, 33);
             this.radLabel1.TabIndex = 4;
             this.radLabel1.Text = "Registro de Negocio";
             this.radLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -152,20 +152,20 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(12, 80);
+            this.tabControl1.Location = new System.Drawing.Point(4, 51);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1287, 628);
+            this.tabControl1.Size = new System.Drawing.Size(966, 357);
             this.tabControl1.TabIndex = 5;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.radGroupBox2);
             this.tabPage1.Controls.Add(this.radGroupBox1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 29);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1279, 595);
+            this.tabPage1.Size = new System.Drawing.Size(958, 331);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Ver negocios";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -175,9 +175,9 @@
             this.radGroupBox2.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             this.radGroupBox2.Controls.Add(this.dataGridView2);
             this.radGroupBox2.HeaderText = "Negocios Registrados";
-            this.radGroupBox2.Location = new System.Drawing.Point(638, 18);
+            this.radGroupBox2.Location = new System.Drawing.Point(454, 6);
             this.radGroupBox2.Name = "radGroupBox2";
-            this.radGroupBox2.Size = new System.Drawing.Size(599, 542);
+            this.radGroupBox2.Size = new System.Drawing.Size(496, 318);
             this.radGroupBox2.TabIndex = 11;
             this.radGroupBox2.Text = "Negocios Registrados";
             this.radGroupBox2.ThemeName = "TelerikMetro";
@@ -190,33 +190,11 @@
             this.Column6,
             this.Column7,
             this.Column8});
-            this.dataGridView2.Location = new System.Drawing.Point(27, 67);
+            this.dataGridView2.Location = new System.Drawing.Point(5, 29);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 28;
-            this.dataGridView2.Size = new System.Drawing.Size(540, 441);
+            this.dataGridView2.Size = new System.Drawing.Size(481, 273);
             this.dataGridView2.TabIndex = 0;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Codigo";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "RUC";
-            this.Column6.Name = "Column6";
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Razon Social";
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 200;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Direccion";
-            this.Column8.Name = "Column8";
-            this.Column8.Width = 200;
             // 
             // radGroupBox1
             // 
@@ -225,9 +203,9 @@
             this.radGroupBox1.Controls.Add(this.radLabel2);
             this.radGroupBox1.Controls.Add(this.radTextBox1);
             this.radGroupBox1.HeaderText = "Busqueda de Personal";
-            this.radGroupBox1.Location = new System.Drawing.Point(17, 18);
+            this.radGroupBox1.Location = new System.Drawing.Point(6, 6);
             this.radGroupBox1.Name = "radGroupBox1";
-            this.radGroupBox1.Size = new System.Drawing.Size(599, 542);
+            this.radGroupBox1.Size = new System.Drawing.Size(442, 318);
             this.radGroupBox1.TabIndex = 10;
             this.radGroupBox1.Text = "Busqueda de Personal";
             this.radGroupBox1.ThemeName = "TelerikMetro";
@@ -240,49 +218,27 @@
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dataGridView1.Location = new System.Drawing.Point(33, 125);
+            this.dataGridView1.Location = new System.Drawing.Point(15, 56);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(529, 383);
+            this.dataGridView1.Size = new System.Drawing.Size(410, 246);
             this.dataGridView1.TabIndex = 8;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Dni";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Nombres";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 200;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Apellidos";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 200;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Celular";
-            this.Column4.Name = "Column4";
-            // 
             // radLabel2
             // 
-            this.radLabel2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radLabel2.Location = new System.Drawing.Point(216, 31);
+            this.radLabel2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radLabel2.Location = new System.Drawing.Point(15, 29);
             this.radLabel2.Name = "radLabel2";
-            this.radLabel2.Size = new System.Drawing.Size(164, 31);
+            this.radLabel2.Size = new System.Drawing.Size(91, 18);
             this.radLabel2.TabIndex = 7;
             this.radLabel2.Text = "Ingresar Apellido";
             // 
             // radTextBox1
             // 
-            this.radTextBox1.Location = new System.Drawing.Point(33, 77);
+            this.radTextBox1.Location = new System.Drawing.Point(112, 27);
             this.radTextBox1.Name = "radTextBox1";
-            this.radTextBox1.Size = new System.Drawing.Size(529, 32);
+            this.radTextBox1.Size = new System.Drawing.Size(313, 24);
             this.radTextBox1.TabIndex = 6;
             this.radTextBox1.ThemeName = "TelerikMetro";
             this.radTextBox1.TextChanged += new System.EventHandler(this.radTextBox1_TextChanged);
@@ -314,10 +270,10 @@
             this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Controls.Add(this.radTextBox6);
-            this.tabPage2.Location = new System.Drawing.Point(4, 29);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1279, 595);
+            this.tabPage2.Size = new System.Drawing.Size(958, 602);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Registro de Negocio";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -325,11 +281,12 @@
             // textBox1
             // 
             this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(956, 359);
+            this.textBox1.Location = new System.Drawing.Point(716, 270);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(10, 26);
+            this.textBox1.Size = new System.Drawing.Size(10, 20);
             this.textBox1.TabIndex = 63;
             this.textBox1.Text = "Foto\\default_image.png";
+            this.textBox1.Visible = false;
             // 
             // comboBox4
             // 
@@ -337,69 +294,70 @@
             this.comboBox4.Items.AddRange(new object[] {
             "Propio",
             "Alquilado"});
-            this.comboBox4.Location = new System.Drawing.Point(219, 394);
+            this.comboBox4.Location = new System.Drawing.Point(108, 250);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(562, 28);
+            this.comboBox4.Size = new System.Drawing.Size(328, 21);
             this.comboBox4.TabIndex = 62;
             // 
             // radTextBox12
             // 
-            this.radTextBox12.Location = new System.Drawing.Point(219, 424);
+            this.radTextBox12.Location = new System.Drawing.Point(108, 274);
             this.radTextBox12.Name = "radTextBox12";
-            this.radTextBox12.Size = new System.Drawing.Size(562, 32);
+            this.radTextBox12.Size = new System.Drawing.Size(328, 24);
             this.radTextBox12.TabIndex = 33;
             this.radTextBox12.ThemeName = "TelerikMetro";
             // 
             // radTextBox7
             // 
             this.radTextBox7.Enabled = false;
-            this.radTextBox7.Location = new System.Drawing.Point(219, 89);
+            this.radTextBox7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radTextBox7.Location = new System.Drawing.Point(108, 15);
             this.radTextBox7.Name = "radTextBox7";
-            this.radTextBox7.Size = new System.Drawing.Size(562, 32);
+            this.radTextBox7.Size = new System.Drawing.Size(328, 23);
             this.radTextBox7.TabIndex = 9;
             this.radTextBox7.ThemeName = "TelerikMetro";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(108, 430);
+            this.label11.Location = new System.Drawing.Point(40, 277);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(91, 20);
+            this.label11.Size = new System.Drawing.Size(62, 13);
             this.label11.TabIndex = 32;
             this.label11.Text = "Referencia:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(158, 93);
+            this.label1.Location = new System.Drawing.Point(73, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 20);
+            this.label1.Size = new System.Drawing.Size(29, 13);
             this.label1.TabIndex = 8;
             this.label1.Text = "DNI:";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(92, 397);
+            this.label12.Location = new System.Drawing.Point(27, 253);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(107, 20);
+            this.label12.Size = new System.Drawing.Size(75, 13);
             this.label12.TabIndex = 30;
             this.label12.Text = "Tipo de Local:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(151, 126);
+            this.label2.Location = new System.Drawing.Point(69, 43);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 20);
+            this.label2.Size = new System.Drawing.Size(33, 13);
             this.label2.TabIndex = 12;
             this.label2.Text = "RUC:";
             // 
             // radButton1
             // 
-            this.radButton1.Location = new System.Drawing.Point(868, 391);
+            this.radButton1.Location = new System.Drawing.Point(519, 277);
             this.radButton1.Name = "radButton1";
-            this.radButton1.Size = new System.Drawing.Size(206, 38);
+            this.radButton1.Size = new System.Drawing.Size(150, 24);
             this.radButton1.TabIndex = 29;
             this.radButton1.Text = "Agregar Fotografia";
             this.radButton1.ThemeName = "TelerikMetro";
@@ -407,16 +365,17 @@
             // 
             // radTextBox2
             // 
-            this.radTextBox2.Location = new System.Drawing.Point(219, 122);
+            this.radTextBox2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radTextBox2.Location = new System.Drawing.Point(108, 41);
             this.radTextBox2.Name = "radTextBox2";
-            this.radTextBox2.Size = new System.Drawing.Size(562, 32);
+            this.radTextBox2.Size = new System.Drawing.Size(328, 23);
             this.radTextBox2.TabIndex = 15;
             this.radTextBox2.ThemeName = "TelerikMetro";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(848, 89);
+            this.pictureBox1.Location = new System.Drawing.Point(472, 11);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(254, 255);
             this.pictureBox1.TabIndex = 28;
@@ -425,119 +384,126 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(92, 159);
+            this.label3.Location = new System.Drawing.Point(29, 69);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 20);
+            this.label3.Size = new System.Drawing.Size(73, 13);
             this.label3.TabIndex = 11;
             this.label3.Text = "Razón Social:";
             // 
             // radTextBox11
             // 
-            this.radTextBox11.Location = new System.Drawing.Point(219, 358);
+            this.radTextBox11.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radTextBox11.Location = new System.Drawing.Point(108, 223);
             this.radTextBox11.Name = "radTextBox11";
-            this.radTextBox11.Size = new System.Drawing.Size(562, 32);
+            this.radTextBox11.Size = new System.Drawing.Size(328, 23);
             this.radTextBox11.TabIndex = 27;
             this.radTextBox11.ThemeName = "TelerikMetro";
             // 
             // radTextBox3
             // 
-            this.radTextBox3.Location = new System.Drawing.Point(219, 155);
+            this.radTextBox3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radTextBox3.Location = new System.Drawing.Point(108, 67);
             this.radTextBox3.Name = "radTextBox3";
-            this.radTextBox3.Size = new System.Drawing.Size(562, 32);
+            this.radTextBox3.Size = new System.Drawing.Size(328, 23);
             this.radTextBox3.TabIndex = 14;
             this.radTextBox3.ThemeName = "TelerikMetro";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(124, 362);
+            this.label10.Location = new System.Drawing.Point(50, 225);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(75, 20);
+            this.label10.Size = new System.Drawing.Size(52, 13);
             this.label10.TabIndex = 26;
             this.label10.Text = "Telefono:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(142, 192);
+            this.label4.Location = new System.Drawing.Point(63, 96);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 20);
+            this.label4.Size = new System.Drawing.Size(39, 13);
             this.label4.TabIndex = 10;
             this.label4.Text = "Rubro:";
             // 
             // radTextBox8
             // 
-            this.radTextBox8.Location = new System.Drawing.Point(219, 325);
+            this.radTextBox8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radTextBox8.Location = new System.Drawing.Point(108, 197);
             this.radTextBox8.Name = "radTextBox8";
-            this.radTextBox8.Size = new System.Drawing.Size(562, 32);
+            this.radTextBox8.Size = new System.Drawing.Size(328, 23);
             this.radTextBox8.TabIndex = 24;
             this.radTextBox8.ThemeName = "TelerikMetro";
             // 
             // radTextBox4
             // 
-            this.radTextBox4.Location = new System.Drawing.Point(219, 188);
+            this.radTextBox4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radTextBox4.Location = new System.Drawing.Point(108, 93);
             this.radTextBox4.Name = "radTextBox4";
-            this.radTextBox4.Size = new System.Drawing.Size(562, 32);
+            this.radTextBox4.Size = new System.Drawing.Size(328, 23);
             this.radTextBox4.TabIndex = 13;
             this.radTextBox4.ThemeName = "TelerikMetro";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(83, 329);
+            this.label8.Location = new System.Drawing.Point(25, 199);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(116, 20);
+            this.label8.Size = new System.Drawing.Size(77, 13);
             this.label8.TabIndex = 22;
             this.label8.Text = "Departamento:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(120, 225);
+            this.label5.Location = new System.Drawing.Point(47, 121);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 20);
+            this.label5.Size = new System.Drawing.Size(55, 13);
             this.label5.TabIndex = 16;
             this.label5.Text = "Direccion:";
             // 
             // radTextBox9
             // 
-            this.radTextBox9.Location = new System.Drawing.Point(219, 292);
+            this.radTextBox9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radTextBox9.Location = new System.Drawing.Point(108, 171);
             this.radTextBox9.Name = "radTextBox9";
-            this.radTextBox9.Size = new System.Drawing.Size(562, 32);
+            this.radTextBox9.Size = new System.Drawing.Size(328, 23);
             this.radTextBox9.TabIndex = 25;
             this.radTextBox9.ThemeName = "TelerikMetro";
             // 
             // radTextBox5
             // 
-            this.radTextBox5.Location = new System.Drawing.Point(219, 221);
+            this.radTextBox5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radTextBox5.Location = new System.Drawing.Point(108, 119);
             this.radTextBox5.Name = "radTextBox5";
-            this.radTextBox5.Size = new System.Drawing.Size(562, 32);
+            this.radTextBox5.Size = new System.Drawing.Size(328, 23);
             this.radTextBox5.TabIndex = 17;
             this.radTextBox5.ThemeName = "TelerikMetro";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(123, 296);
+            this.label7.Location = new System.Drawing.Point(48, 173);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(76, 20);
+            this.label7.Size = new System.Drawing.Size(54, 13);
             this.label7.TabIndex = 23;
             this.label7.Text = "Provincia:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(136, 258);
+            this.label6.Location = new System.Drawing.Point(60, 148);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 20);
+            this.label6.Size = new System.Drawing.Size(42, 13);
             this.label6.TabIndex = 18;
             this.label6.Text = "Distrito:";
             // 
             // radTextBox6
             // 
-            this.radTextBox6.Location = new System.Drawing.Point(219, 254);
+            this.radTextBox6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radTextBox6.Location = new System.Drawing.Point(108, 145);
             this.radTextBox6.Name = "radTextBox6";
-            this.radTextBox6.Size = new System.Drawing.Size(562, 32);
+            this.radTextBox6.Size = new System.Drawing.Size(328, 23);
             this.radTextBox6.TabIndex = 19;
             this.radTextBox6.ThemeName = "TelerikMetro";
             // 
@@ -564,19 +530,19 @@
             this.tabPage3.Controls.Add(this.radTextBox17);
             this.tabPage3.Controls.Add(this.label18);
             this.tabPage3.Controls.Add(this.radTextBox18);
-            this.tabPage3.Location = new System.Drawing.Point(4, 29);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1279, 595);
+            this.tabPage3.Size = new System.Drawing.Size(958, 602);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Datos Negocio";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // radButton2
             // 
-            this.radButton2.Location = new System.Drawing.Point(577, 438);
+            this.radButton2.Location = new System.Drawing.Point(244, 292);
             this.radButton2.Name = "radButton2";
-            this.radButton2.Size = new System.Drawing.Size(206, 38);
+            this.radButton2.Size = new System.Drawing.Size(206, 32);
             this.radButton2.TabIndex = 64;
             this.radButton2.Text = "Registrar Negocio";
             this.radButton2.ThemeName = "TelerikMetro";
@@ -585,181 +551,227 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(374, 384);
+            this.label21.Location = new System.Drawing.Point(154, 256);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(121, 20);
+            this.label21.Size = new System.Drawing.Size(82, 13);
             this.label21.TabIndex = 38;
             this.label21.Text = "Utilidad Liquida:";
             // 
             // radTextBox21
             // 
-            this.radTextBox21.Location = new System.Drawing.Point(515, 378);
+            this.radTextBox21.Location = new System.Drawing.Point(242, 253);
             this.radTextBox21.Name = "radTextBox21";
-            this.radTextBox21.Size = new System.Drawing.Size(562, 32);
+            this.radTextBox21.Size = new System.Drawing.Size(208, 24);
             this.radTextBox21.TabIndex = 39;
             this.radTextBox21.ThemeName = "TelerikMetro";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(313, 351);
+            this.label22.Location = new System.Drawing.Point(113, 229);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(182, 20);
+            this.label22.Size = new System.Drawing.Size(123, 13);
             this.label22.TabIndex = 36;
             this.label22.Text = "Total Costos Operativos:";
             // 
             // radTextBox22
             // 
-            this.radTextBox22.Location = new System.Drawing.Point(515, 345);
+            this.radTextBox22.Location = new System.Drawing.Point(242, 226);
             this.radTextBox22.Name = "radTextBox22";
-            this.radTextBox22.Size = new System.Drawing.Size(562, 32);
+            this.radTextBox22.Size = new System.Drawing.Size(208, 24);
             this.radTextBox22.TabIndex = 37;
             this.radTextBox22.ThemeName = "TelerikMetro";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(360, 318);
+            this.label20.Location = new System.Drawing.Point(144, 202);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(135, 20);
+            this.label20.Size = new System.Drawing.Size(92, 13);
             this.label20.TabIndex = 34;
             this.label20.Text = "Utilidad operativa:";
             // 
             // radTextBox20
             // 
-            this.radTextBox20.Location = new System.Drawing.Point(515, 312);
+            this.radTextBox20.Location = new System.Drawing.Point(242, 199);
             this.radTextBox20.Name = "radTextBox20";
-            this.radTextBox20.Size = new System.Drawing.Size(562, 32);
+            this.radTextBox20.Size = new System.Drawing.Size(208, 24);
             this.radTextBox20.TabIndex = 35;
             this.radTextBox20.ThemeName = "TelerikMetro";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(232, 285);
+            this.label19.Location = new System.Drawing.Point(56, 175);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(263, 20);
+            this.label19.Size = new System.Drawing.Size(180, 13);
             this.label19.TabIndex = 32;
             this.label19.Text = "Total Costo mercaderia / producción";
             // 
             // radTextBox19
             // 
-            this.radTextBox19.Location = new System.Drawing.Point(515, 279);
+            this.radTextBox19.Location = new System.Drawing.Point(242, 172);
             this.radTextBox19.Name = "radTextBox19";
-            this.radTextBox19.Size = new System.Drawing.Size(562, 32);
+            this.radTextBox19.Size = new System.Drawing.Size(208, 24);
             this.radTextBox19.TabIndex = 33;
             this.radTextBox19.ThemeName = "TelerikMetro";
             // 
             // radTextBox13
             // 
-            this.radTextBox13.Location = new System.Drawing.Point(515, 81);
+            this.radTextBox13.Location = new System.Drawing.Point(242, 12);
             this.radTextBox13.Name = "radTextBox13";
-            this.radTextBox13.Size = new System.Drawing.Size(562, 32);
+            this.radTextBox13.Size = new System.Drawing.Size(208, 24);
             this.radTextBox13.TabIndex = 21;
             this.radTextBox13.ThemeName = "TelerikMetro";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(347, 87);
+            this.label13.Location = new System.Drawing.Point(135, 15);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(148, 20);
+            this.label13.Size = new System.Drawing.Size(101, 13);
             this.label13.TabIndex = 20;
             this.label13.Text = "Disponible Efectivo:";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(251, 120);
+            this.label14.Location = new System.Drawing.Point(71, 41);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(244, 20);
+            this.label14.Size = new System.Drawing.Size(165, 13);
             this.label14.TabIndex = 24;
             this.label14.Text = "Inventario(Total Activo Corriente):";
             // 
             // radTextBox14
             // 
-            this.radTextBox14.Location = new System.Drawing.Point(515, 114);
+            this.radTextBox14.Location = new System.Drawing.Point(242, 38);
             this.radTextBox14.Name = "radTextBox14";
-            this.radTextBox14.Size = new System.Drawing.Size(562, 32);
+            this.radTextBox14.Size = new System.Drawing.Size(208, 24);
             this.radTextBox14.TabIndex = 27;
             this.radTextBox14.ThemeName = "TelerikMetro";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(392, 153);
+            this.label15.Location = new System.Drawing.Point(164, 67);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(103, 20);
+            this.label15.Size = new System.Drawing.Size(72, 13);
             this.label15.TabIndex = 23;
             this.label15.Text = "Total Activos:";
             // 
             // radTextBox15
             // 
-            this.radTextBox15.Location = new System.Drawing.Point(515, 147);
+            this.radTextBox15.Location = new System.Drawing.Point(242, 64);
             this.radTextBox15.Name = "radTextBox15";
-            this.radTextBox15.Size = new System.Drawing.Size(562, 32);
+            this.radTextBox15.Size = new System.Drawing.Size(208, 24);
             this.radTextBox15.TabIndex = 26;
             this.radTextBox15.ThemeName = "TelerikMetro";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(398, 186);
+            this.label16.Location = new System.Drawing.Point(168, 94);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(97, 20);
+            this.label16.Size = new System.Drawing.Size(68, 13);
             this.label16.TabIndex = 22;
             this.label16.Text = "Total pasivo:";
             // 
             // radTextBox16
             // 
-            this.radTextBox16.Location = new System.Drawing.Point(515, 180);
+            this.radTextBox16.Location = new System.Drawing.Point(242, 91);
             this.radTextBox16.Name = "radTextBox16";
-            this.radTextBox16.Size = new System.Drawing.Size(562, 32);
+            this.radTextBox16.Size = new System.Drawing.Size(208, 24);
             this.radTextBox16.TabIndex = 25;
             this.radTextBox16.ThemeName = "TelerikMetro";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(367, 219);
+            this.label17.Location = new System.Drawing.Point(150, 121);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(128, 20);
+            this.label17.Size = new System.Drawing.Size(86, 13);
             this.label17.TabIndex = 28;
             this.label17.Text = "Total Prestamos:";
             // 
             // radTextBox17
             // 
-            this.radTextBox17.Location = new System.Drawing.Point(515, 213);
+            this.radTextBox17.Location = new System.Drawing.Point(242, 118);
             this.radTextBox17.Name = "radTextBox17";
-            this.radTextBox17.Size = new System.Drawing.Size(562, 32);
+            this.radTextBox17.Size = new System.Drawing.Size(208, 24);
             this.radTextBox17.TabIndex = 29;
             this.radTextBox17.ThemeName = "TelerikMetro";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(381, 252);
+            this.label18.Location = new System.Drawing.Point(159, 148);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(114, 20);
+            this.label18.Size = new System.Drawing.Size(77, 13);
             this.label18.TabIndex = 30;
             this.label18.Text = "Total Ingresos:";
             // 
             // radTextBox18
             // 
-            this.radTextBox18.Location = new System.Drawing.Point(515, 246);
+            this.radTextBox18.Location = new System.Drawing.Point(242, 145);
             this.radTextBox18.Name = "radTextBox18";
-            this.radTextBox18.Size = new System.Drawing.Size(562, 32);
+            this.radTextBox18.Size = new System.Drawing.Size(208, 24);
             this.radTextBox18.TabIndex = 31;
             this.radTextBox18.ThemeName = "TelerikMetro";
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Dni";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 60;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Nombres";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 150;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Apellidos";
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 150;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Celular";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 60;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Codigo";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "RUC";
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Razon Social";
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 150;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Direccion";
+            this.Column8.Name = "Column8";
+            this.Column8.Width = 200;
+            // 
             // frm_registro_negocio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1311, 722);
+            this.ClientSize = new System.Drawing.Size(960, 405);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.radLabel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_registro_negocio";
             // 
             // 
@@ -869,15 +881,15 @@
         private System.Windows.Forms.Label label20;
         private Telerik.WinControls.UI.RadTextBox radTextBox20;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.TextBox textBox1;
     }
 }
