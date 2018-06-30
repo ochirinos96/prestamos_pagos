@@ -42,18 +42,21 @@ namespace prestamos_pagos2.interfaces
             SqlCommand cmd = new SqlCommand("registrar_personal_existente", conn.conn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@Dni", radTextBox1.Text.ToString());
-            cmd.Parameters.AddWithValue("@usuario", radTextBox20.Text.ToString());
-            cmd.Parameters.AddWithValue("@contrasenia", radTextBox19.Text);
-            cmd.Parameters.AddWithValue("@permisos", comboBox1.Text.ToString());
+            cmd.Parameters.AddWithValue("@Cargo", comboBox4.Text);
             cmd.Parameters.AddWithValue("@Fecha_ingreso", radDateTimePicker2.Value.Date);
-            cmd.Parameters.AddWithValue("@Remuneracion_basica", double.Parse(radTextBox16.Text));
+            cmd.Parameters.AddWithValue("@Remuneracion_basica", radTextBox16.Text);
             cmd.Parameters.AddWithValue("@Condicion_contrato", comboBox3.Text.ToString());
             cmd.Parameters.AddWithValue("@Inicio_contrato", radDateTimePicker3.Value.Date);
             cmd.Parameters.AddWithValue("@Fin_contrato", radDateTimePicker4.Value.Date);
             cmd.Parameters.AddWithValue("@Observacion", radRichTextEditor1.Text.ToString());
+            cmd.Parameters.AddWithValue("@terminal",Environment.MachineName);
+            cmd.Parameters.AddWithValue("@dni_registro", dni_login);
+
+            SqlDataReader dr = cmd.ExecuteReader();
             try
+
             {
-                SqlDataReader dr = cmd.ExecuteReader();
+                
 
                 MessageBox.Show("Contrato registrado corectamente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 mostrar_contratos_personal();
@@ -86,36 +89,38 @@ namespace prestamos_pagos2.interfaces
 
             comando.Connection = conn.conn;
 
-            comando.CommandText = "exec mostrar_contratos_personal '" + radTextBox13.Text+"'";
+            comando.CommandText = "exec mostrar_registros_personal '" + radTextBox13.Text+"'";
             //especificamos que es de tipo Text
             comando.CommandType = CommandType.Text;
 
             //limpiamos los renglones de la datagridview
-            radGridView1.Rows.Clear();
+            dataGridView1.Rows.Clear();
             //a la variable DataReader asignamos  el la variable de tipo SqlCommand
             dr = comando.ExecuteReader();
             //el ciclo while se ejecutará mientras lea registros en la tabla
             while (dr.Read())
             {
                 //variable de tipo entero para ir enumerando los la filas del datagridview
-                int renglon = radGridView1.Rows.Add();
+                int renglon = dataGridView1.Rows.Add();
                 // especificamos en que fila se mostrará cada registro
                 // nombredeldatagrid.filas[numerodefila].celdas[nombredelacelda].valor=
                 // dr.tipodedatosalmacenado(dr.getordinal(nombredelcampo_en_la_base_de_datos)conviertelo_a_string_sino_es_del_tipo_string);
-                radGridView1.Rows[renglon].Cells["ccontrato"].Value = dr.GetString(dr.GetOrdinal("Codigo_usuario")).ToString();
-                radGridView1.Rows[renglon].Cells["column4"].Value = dr.GetString(dr.GetOrdinal("Cargo")).ToString();
-                estado= dr.GetString(dr.GetOrdinal("Estado")).ToString();
+                dataGridView1.Rows[renglon].Cells["column1"].Value = dr.GetString(dr.GetOrdinal("Codigo_usuario")).ToString();
+                dataGridView1.Rows[renglon].Cells["Column2"].Value = dr.GetString(dr.GetOrdinal("Cargo")).ToString();
+                dataGridView1.Rows[renglon].Cells["Column3"].Value = dr.GetString(dr.GetOrdinal("Condicion_contrato")).ToString();
+                dataGridView1.Rows[renglon].Cells["column4"].Value = dr.GetInt32(dr.GetOrdinal("Remuneracion_basica")).ToString();
+                dataGridView1.Rows[renglon].Cells["Column5"].Value = dr.GetDateTime(dr.GetOrdinal("Fin_contrato")).ToString();
+                estado = dr.GetString(dr.GetOrdinal("Estado")).ToString();
                 if (estado=="1")
                 {
                     estado = "Activo";
                 }
                 else
                 {
-                    estado = "Inactivo";
+                    estado = "Caduco";
                 }
-                radGridView1.Rows[renglon].Cells["column1"].Value = estado;
-                radGridView1.Rows[renglon].Cells["column2"].Value = dr.GetDateTime(dr.GetOrdinal("Inicio_contrato")).ToString();
-                radGridView1.Rows[renglon].Cells["column3"].Value = dr.GetString(dr.GetOrdinal("Fin_contrato")).ToString();
+                dataGridView1.Rows[renglon].Cells["Column6"].Value = estado;
+               
 
 
             }
@@ -135,6 +140,8 @@ namespace prestamos_pagos2.interfaces
 
         private void radTextBox1_TextChanged(object sender, EventArgs e)
         {
+           
+
             string busqueda;
             coneccion conn = new coneccion();
 
@@ -193,9 +200,10 @@ namespace prestamos_pagos2.interfaces
             }
             else
             {
+               
                 radButton4.Enabled = true;
             }
-            radTextBox13 = radTextBox1;
+            radTextBox13.Text = radTextBox1.Text;
             mostrar_contratos_personal();
         }
 
@@ -233,7 +241,7 @@ namespace prestamos_pagos2.interfaces
                 conn.conn.Open();
             }
 
-            SqlCommand cmd = new SqlCommand("registrar_personal_antiguo", conn.conn);
+            SqlCommand cmd = new SqlCommand("registrar_persona", conn.conn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@Dni", radTextBox1.Text.ToString());
             cmd.Parameters.AddWithValue("@Nombres", radTextBox2.Text.ToString());

@@ -36,14 +36,9 @@
             this.radButtonElement2 = new Telerik.WinControls.UI.RadButtonElement();
             this.radRibbonBarGroup2 = new Telerik.WinControls.UI.RadRibbonBarGroup();
             this.radButtonElement3 = new Telerik.WinControls.UI.RadButtonElement();
-            this.radRibbonBarGroup9 = new Telerik.WinControls.UI.RadRibbonBarGroup();
-            this.radButtonElement5 = new Telerik.WinControls.UI.RadButtonElement();
-            this.radRibbonBarGroup10 = new Telerik.WinControls.UI.RadRibbonBarGroup();
             this.radRibbonBarGroup11 = new Telerik.WinControls.UI.RadRibbonBarGroup();
             this.radButtonElement4 = new Telerik.WinControls.UI.RadButtonElement();
-            this.radRibbonBarGroup12 = new Telerik.WinControls.UI.RadRibbonBarGroup();
             this.ribbonTab2 = new Telerik.WinControls.UI.RibbonTab();
-            this.radRibbonBarGroup3 = new Telerik.WinControls.UI.RadRibbonBarGroup();
             this.radRibbonBarGroup4 = new Telerik.WinControls.UI.RadRibbonBarGroup();
             this.ribbonTab3 = new Telerik.WinControls.UI.RibbonTab();
             this.radRibbonBarGroup5 = new Telerik.WinControls.UI.RadRibbonBarGroup();
@@ -57,6 +52,9 @@
             this.radOffice2007ScreenTipElement1 = new Telerik.WinControls.UI.RadOffice2007ScreenTipElement();
             this.diamondShape1 = new Telerik.WinControls.UI.DiamondShape();
             this.tabVsShape1 = new Telerik.WinControls.UI.TabVsShape();
+            this.radButtonElement5 = new Telerik.WinControls.UI.RadButtonElement();
+            this.radButtonElement6 = new Telerik.WinControls.UI.RadButtonElement();
+            this.radButtonElement7 = new Telerik.WinControls.UI.RadButtonElement();
             ((System.ComponentModel.ISupportInitialize)(this.radRibbonBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radStatusStrip1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -93,14 +91,11 @@
             // 
             // ribbonTab1
             // 
-            this.ribbonTab1.IsSelected = true;
+            this.ribbonTab1.IsSelected = false;
             this.ribbonTab1.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.radRibbonBarGroup1,
             this.radRibbonBarGroup2,
-            this.radRibbonBarGroup9,
-            this.radRibbonBarGroup10,
-            this.radRibbonBarGroup11,
-            this.radRibbonBarGroup12});
+            this.radRibbonBarGroup11});
             this.ribbonTab1.Name = "ribbonTab1";
             this.ribbonTab1.Text = "Clientes";
             // 
@@ -135,7 +130,8 @@
             // radRibbonBarGroup2
             // 
             this.radRibbonBarGroup2.Items.AddRange(new Telerik.WinControls.RadItem[] {
-            this.radButtonElement3});
+            this.radButtonElement3,
+            this.radButtonElement5});
             this.radRibbonBarGroup2.Name = "radRibbonBarGroup2";
             this.radRibbonBarGroup2.Text = "Gestion de Negocio";
             // 
@@ -146,30 +142,12 @@
             this.radButtonElement3.Text = "";
             this.radButtonElement3.Click += new System.EventHandler(this.radButtonElement3_Click);
             // 
-            // radRibbonBarGroup9
-            // 
-            this.radRibbonBarGroup9.Items.AddRange(new Telerik.WinControls.RadItem[] {
-            this.radButtonElement5});
-            this.radRibbonBarGroup9.Name = "radRibbonBarGroup9";
-            this.radRibbonBarGroup9.Text = "Registro de Negocio";
-            // 
-            // radButtonElement5
-            // 
-            this.radButtonElement5.Name = "radButtonElement5";
-            this.radButtonElement5.Text = "Registro\r\nArticulos";
-            this.radButtonElement5.Click += new System.EventHandler(this.radButtonElement5_Click);
-            // 
-            // radRibbonBarGroup10
-            // 
-            this.radRibbonBarGroup10.Name = "radRibbonBarGroup10";
-            this.radRibbonBarGroup10.Text = "Gestión de Negocio";
-            // 
             // radRibbonBarGroup11
             // 
             this.radRibbonBarGroup11.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.radButtonElement4});
             this.radRibbonBarGroup11.Name = "radRibbonBarGroup11";
-            this.radRibbonBarGroup11.Text = "Registro de Articulos";
+            this.radRibbonBarGroup11.Text = "Gestion de Articulos";
             // 
             // radButtonElement4
             // 
@@ -180,26 +158,19 @@
             this.radButtonElement4.Text = "";
             this.radButtonElement4.Click += new System.EventHandler(this.radButtonElement4_Click);
             // 
-            // radRibbonBarGroup12
-            // 
-            this.radRibbonBarGroup12.Name = "radRibbonBarGroup12";
-            this.radRibbonBarGroup12.Text = "Gestión de Articulos";
-            // 
             // ribbonTab2
             // 
+            this.ribbonTab2.IsSelected = true;
             this.ribbonTab2.Items.AddRange(new Telerik.WinControls.RadItem[] {
-            this.radRibbonBarGroup3,
             this.radRibbonBarGroup4});
             this.ribbonTab2.Name = "ribbonTab2";
             this.ribbonTab2.Text = "Seguridad";
             // 
-            // radRibbonBarGroup3
-            // 
-            this.radRibbonBarGroup3.Name = "radRibbonBarGroup3";
-            this.radRibbonBarGroup3.Text = "Registro de Personal";
-            // 
             // radRibbonBarGroup4
             // 
+            this.radRibbonBarGroup4.Items.AddRange(new Telerik.WinControls.RadItem[] {
+            this.radButtonElement6,
+            this.radButtonElement7});
             this.radRibbonBarGroup4.Name = "radRibbonBarGroup4";
             this.radRibbonBarGroup4.Text = "Gestion de Personal";
             // 
@@ -266,6 +237,25 @@
             this.radOffice2007ScreenTipElement1.TemplateType = null;
             this.radOffice2007ScreenTipElement1.TipSize = new System.Drawing.Size(0, 0);
             // 
+            // radButtonElement5
+            // 
+            this.radButtonElement5.Name = "radButtonElement5";
+            this.radButtonElement5.Text = "New button";
+            // 
+            // radButtonElement6
+            // 
+            this.radButtonElement6.Image = ((System.Drawing.Image)(resources.GetObject("radButtonElement6.Image")));
+            this.radButtonElement6.Name = "radButtonElement6";
+            this.radButtonElement6.Text = "";
+            this.radButtonElement6.Click += new System.EventHandler(this.radButtonElement6_Click);
+            // 
+            // radButtonElement7
+            // 
+            this.radButtonElement7.Image = ((System.Drawing.Image)(resources.GetObject("radButtonElement7.Image")));
+            this.radButtonElement7.Name = "radButtonElement7";
+            this.radButtonElement7.Text = "";
+            this.radButtonElement7.Click += new System.EventHandler(this.radButtonElement7_Click);
+            // 
             // frmprincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -300,7 +290,6 @@
         private Telerik.WinControls.UI.RadRibbonBarGroup radRibbonBarGroup1;
         private Telerik.WinControls.UI.RadRibbonBarGroup radRibbonBarGroup2;
         private Telerik.WinControls.UI.RibbonTab ribbonTab2;
-        private Telerik.WinControls.UI.RadRibbonBarGroup radRibbonBarGroup3;
         private Telerik.WinControls.UI.RadRibbonBarGroup radRibbonBarGroup4;
         private Telerik.WinControls.UI.RibbonTab ribbonTab3;
         private Telerik.WinControls.UI.RadRibbonBarGroup radRibbonBarGroup5;
@@ -309,10 +298,7 @@
         private Telerik.WinControls.UI.RadRibbonBarGroup radRibbonBarGroup7;
         private Telerik.WinControls.UI.RadRibbonBarGroup radRibbonBarGroup8;
         private Telerik.WinControls.Themes.TelerikMetroTheme telerikMetroTheme1;
-        private Telerik.WinControls.UI.RadRibbonBarGroup radRibbonBarGroup9;
-        private Telerik.WinControls.UI.RadRibbonBarGroup radRibbonBarGroup10;
         private Telerik.WinControls.UI.RadRibbonBarGroup radRibbonBarGroup11;
-        private Telerik.WinControls.UI.RadRibbonBarGroup radRibbonBarGroup12;
         private Telerik.WinControls.UI.RadButtonElement radButtonElement1;
         private Telerik.WinControls.UI.RadOffice2007ScreenTipElement radOffice2007ScreenTipElement1;
         private Telerik.WinControls.UI.DiamondShape diamondShape1;
@@ -322,5 +308,7 @@
         private Telerik.WinControls.UI.RadButtonElement radButtonElement3;
         private Telerik.WinControls.UI.RadButtonElement radButtonElement4;
         private Telerik.WinControls.UI.RadButtonElement radButtonElement5;
+        private Telerik.WinControls.UI.RadButtonElement radButtonElement6;
+        private Telerik.WinControls.UI.RadButtonElement radButtonElement7;
     }
 }
