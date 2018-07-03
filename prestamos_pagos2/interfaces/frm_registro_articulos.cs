@@ -152,27 +152,27 @@ namespace prestamos_pagos2.interfaces
 
             comando.Connection = conn.conn;
 
-            comando.CommandText = "exec mostrar_clientes_apellido '" + radTextBox9.Text + "'";
+            comando.CommandText = "exec mostrar_clientes_apellido '" + radTextBox6.Text + "'";
             //especificamos que es de tipo Text
             comando.CommandType = CommandType.Text;
 
             //limpiamos los renglones de la datagridview
-            dataGridView3.Rows.Clear();
+            dataGridView1.Rows.Clear();
             //a la variable DataReader asignamos  el la variable de tipo SqlCommand
             dr = comando.ExecuteReader();
             //el ciclo while se ejecutará mientras lea registros en la tabla
             while (dr.Read())
             {
                 //variable de tipo entero para ir enumerando los la filas del datagridview
-                int renglon = dataGridView3.Rows.Add();
+                int renglon = dataGridView1.Rows.Add();
                 // especificamos en que fila se mostrará cada registro
                 // nombredeldatagrid.filas[numerodefila].celdas[nombredelacelda].valor=
                 // dr.tipodedatosalmacenado(dr.getordinal(nombredelcampo_en_la_base_de_datos)conviertelo_a_string_sino_es_del_tipo_string);
-                dataGridView3.Rows[renglon].Cells["dataGridViewTextBoxColumn5"].Value = dr.GetString(dr.GetOrdinal("Dni")).ToString();
-                dataGridView3.Rows[renglon].Cells["dataGridViewTextBoxColumn6"].Value = dr.GetString(dr.GetOrdinal("Nombres")).ToString();
-                dataGridView3.Rows[renglon].Cells["dataGridViewTextBoxColumn7"].Value = dr.GetString(dr.GetOrdinal("apellidos")).ToString();
-                dataGridView3.Rows[renglon].Cells["dataGridViewTextBoxColumn8"].Value = dr.GetInt32(dr.GetOrdinal("Telefono")).ToString();
-                dataGridView3.Rows[renglon].Cells["Column5"].Value = dr.GetInt32(dr.GetOrdinal("Celular")).ToString();
+                dataGridView1.Rows[renglon].Cells["Column1"].Value = dr.GetString(dr.GetOrdinal("Dni")).ToString();
+                dataGridView1.Rows[renglon].Cells["Column2"].Value = dr.GetString(dr.GetOrdinal("Nombres")).ToString();
+                dataGridView1.Rows[renglon].Cells["Column3"].Value = dr.GetString(dr.GetOrdinal("apellidos")).ToString();
+                dataGridView1.Rows[renglon].Cells["Column4"].Value = dr.GetInt32(dr.GetOrdinal("Telefono")).ToString();
+                dataGridView1.Rows[renglon].Cells["Column7"].Value = dr.GetInt32(dr.GetOrdinal("Celular")).ToString();
 
             }
 
@@ -214,22 +214,22 @@ namespace prestamos_pagos2.interfaces
             comando.CommandType = CommandType.Text;
 
             //limpiamos los renglones de la datagridview
-            dataGridView4.Rows.Clear();
+            dataGridView2.Rows.Clear();
             //a la variable DataReader asignamos  el la variable de tipo SqlCommand
             dr = comando.ExecuteReader();
             //el ciclo while se ejecutará mientras lea registros en la tabla
             while (dr.Read())
             {
                 //variable de tipo entero para ir enumerando los la filas del datagridview
-                int renglon = dataGridView4.Rows.Add();
+                int renglon = dataGridView2.Rows.Add();
                 // especificamos en que fila se mostrará cada registro
                 // nombredeldatagrid.filas[numerodefila].celdas[nombredelacelda].valor=
                 // dr.tipodedatosalmacenado(dr.getordinal(nombredelcampo_en_la_base_de_datos)conviertelo_a_string_sino_es_del_tipo_string);
-                dataGridView4.Rows[renglon].Cells["dataGridViewTextBoxColumn9"].Value = dr.GetString(dr.GetOrdinal("codigo_articulo")).ToString();
-                dataGridView4.Rows[renglon].Cells["dataGridViewTextBoxColumn10"].Value = dr.GetString(dr.GetOrdinal("Nombre")).ToString();
-                dataGridView4.Rows[renglon].Cells["dataGridViewTextBoxColumn11"].Value = dr.GetInt32(dr.GetOrdinal("V_contable")).ToString();
-                dataGridView4.Rows[renglon].Cells["Column6"].Value = dr.GetString(dr.GetOrdinal("N_serie")).ToString();
-                dataGridView4.Rows[renglon].Cells["dataGridViewTextBoxColumn12"].Value = dr.GetString(dr.GetOrdinal("Observaciones")).ToString();
+                dataGridView2.Rows[renglon].Cells["dataGridViewTextBoxColumn1"].Value = dr.GetString(dr.GetOrdinal("codigo_articulo")).ToString();
+                dataGridView2.Rows[renglon].Cells["dataGridViewTextBoxColumn2"].Value = dr.GetString(dr.GetOrdinal("Nombre")).ToString();
+                dataGridView2.Rows[renglon].Cells["dataGridViewTextBoxColumn3"].Value = dr.GetInt32(dr.GetOrdinal("V_contable")).ToString();
+                dataGridView2.Rows[renglon].Cells["Column8"].Value = dr.GetString(dr.GetOrdinal("N_serie")).ToString();
+                dataGridView2.Rows[renglon].Cells["dataGridViewTextBoxColumn4"].Value = dr.GetString(dr.GetOrdinal("Observaciones")).ToString();
 
             }
 
@@ -238,12 +238,14 @@ namespace prestamos_pagos2.interfaces
 
         private void radTextBox6_TextChanged(object sender, EventArgs e)
         {
-
+            mostrar_clientes_apellido();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            string dni = this.dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            radTextBox4.Text = dni;
+            mostrar_articulos(dni);
         }
     }
 }

@@ -67,7 +67,7 @@ namespace prestamos_pagos2.interfaces
                 MessageBox.Show("Error al agregar el contrato", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
-
+            conn.conn.Close();
 
         }
 

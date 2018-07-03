@@ -28,7 +28,38 @@ namespace prestamos_pagos2.interfaces
 
         private void radButton3_Click(object sender, EventArgs e)
         {
+            string codigo = this.dataGridView2.CurrentRow.Cells[0].Value.ToString();
 
+            coneccion conn = new coneccion();
+            if (ConnectionState.Closed == conn.conn.State)
+            {
+                conn.conn.Open();
+            }
+
+            SqlCommand cmd = new SqlCommand("actualizar_personal_contrato", conn.conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@codigo", codigo);
+            cmd.Parameters.AddWithValue("@Cargo", comboBox4.Text);
+            cmd.Parameters.AddWithValue("@Fecha_ingreso", radDateTimePicker2.Value.Date);
+            cmd.Parameters.AddWithValue("@Remuneracion_basica", radTextBox16.Text);
+            cmd.Parameters.AddWithValue("@Condicion_contrato", comboBox3.Text.ToString());
+            cmd.Parameters.AddWithValue("@Inicio_contrato", radDateTimePicker3.Value.Date);
+            cmd.Parameters.AddWithValue("@Fin_contrato", radDateTimePicker4.Value.Date);
+            cmd.Parameters.AddWithValue("@Observacion", radRichTextEditor1.Text.ToString());
+            
+            SqlDataReader dr = cmd.ExecuteReader();
+            try
+
+            {
+
+                MessageBox.Show("Contrato actualizado corectamente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                mostrar_contratos(radTextBox13.Text);
+                conn.conn.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Error al actualizar el contrato", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void radTextBox12_TextChanged(object sender, EventArgs e)
@@ -127,9 +158,10 @@ namespace prestamos_pagos2.interfaces
                 MemoryStream stream = new MemoryStream(MyData);
                 pictureBox1.Image = Image.FromStream(stream);
                 
-                mostrar_contratos();
+                mostrar_contratos(dni);
 
                 MessageBox.Show("Datos obtenidos correctamente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                conn.conn.Close();
             }
             else
             {
@@ -139,7 +171,7 @@ namespace prestamos_pagos2.interfaces
 
         }
 
-        public void mostrar_contratos()
+        public void mostrar_contratos(string dni)
         {
             coneccion conn = new coneccion();
 
@@ -157,27 +189,27 @@ namespace prestamos_pagos2.interfaces
 
             comando.Connection = conn.conn;
 
-            comando.CommandText = "exec mostrar_registros_personal '" + radTextBox13.Text + "'";
+            comando.CommandText = "exec mostrar_registros_personal '" + dni + "'";
             //especificamos que es de tipo Text
             comando.CommandType = CommandType.Text;
 
             //limpiamos los renglones de la datagridview
-            dataGridView1.Rows.Clear();
+            dataGridView2.Rows.Clear();
             //a la variable DataReader asignamos  el la variable de tipo SqlCommand
             dr = comando.ExecuteReader();
             //el ciclo while se ejecutará mientras lea registros en la tabla
             while (dr.Read())
             {
                 //variable de tipo entero para ir enumerando los la filas del datagridview
-                int renglon = dataGridView1.Rows.Add();
+                int renglon = dataGridView2.Rows.Add();
                 // especificamos en que fila se mostrará cada registro
                 // nombredeldatagrid.filas[numerodefila].celdas[nombredelacelda].valor=
                 // dr.tipodedatosalmacenado(dr.getordinal(nombredelcampo_en_la_base_de_datos)conviertelo_a_string_sino_es_del_tipo_string);
-                dataGridView1.Rows[renglon].Cells["column1"].Value = dr.GetString(dr.GetOrdinal("Codigo_usuario")).ToString();
-                dataGridView1.Rows[renglon].Cells["Column2"].Value = dr.GetString(dr.GetOrdinal("Cargo")).ToString();
-                dataGridView1.Rows[renglon].Cells["Column3"].Value = dr.GetString(dr.GetOrdinal("Condicion_contrato")).ToString();
-                dataGridView1.Rows[renglon].Cells["column4"].Value = dr.GetInt32(dr.GetOrdinal("Remuneracion_basica")).ToString();
-                dataGridView1.Rows[renglon].Cells["Column5"].Value = dr.GetDateTime(dr.GetOrdinal("Fin_contrato")).ToString();
+                dataGridView2.Rows[renglon].Cells["dataGridViewTextBoxColumn1"].Value = dr.GetString(dr.GetOrdinal("Codigo_usuario")).ToString();
+                dataGridView2.Rows[renglon].Cells["dataGridViewTextBoxColumn2"].Value = dr.GetString(dr.GetOrdinal("Cargo")).ToString();
+                dataGridView2.Rows[renglon].Cells["dataGridViewTextBoxColumn3"].Value = dr.GetString(dr.GetOrdinal("Condicion_contrato")).ToString();
+                dataGridView2.Rows[renglon].Cells["dataGridViewTextBoxColumn4"].Value = dr.GetInt32(dr.GetOrdinal("Remuneracion_basica")).ToString();
+                dataGridView2.Rows[renglon].Cells["dataGridViewTextBoxColumn5"].Value = dr.GetDateTime(dr.GetOrdinal("Fin_contrato")).ToString();
                 estado = dr.GetString(dr.GetOrdinal("Estado")).ToString();
                 if (estado == "1")
                 {
@@ -187,11 +219,12 @@ namespace prestamos_pagos2.interfaces
                 {
                     estado = "Caduco";
                 }
-                dataGridView1.Rows[renglon].Cells["Column6"].Value = estado;
+                dataGridView2.Rows[renglon].Cells["dataGridViewTextBoxColumn6"].Value = estado;
 
 
 
             }
+            conn.conn.Close();
         }
 
         private void radButton1_Click(object sender, EventArgs e)
@@ -209,6 +242,71 @@ namespace prestamos_pagos2.interfaces
         private void radButton2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string codigo = this.dataGridView2.CurrentRow.Cells[0].Value.ToString();
+
+            coneccion conn = new coneccion();
+
+            if (ConnectionState.Closed == conn.conn.State)
+            {
+                conn.conn.Open();
+            }
+            string comand = "exec mostrar_vista_usuarios '" + codigo + "'";
+            
+            SqlCommand cmd = new SqlCommand(comand, conn.conn);
+
+            SqlDataReader dr = cmd.ExecuteReader();
+            
+            if (dr.Read())
+            {
+                radTextBox13.Text = dr["Dni"].ToString();
+                comboBox4.Text = dr["Cargo"].ToString();
+                radDateTimePicker2.Value = Convert.ToDateTime(dr["Fecha_ingreso"].ToString());
+                radTextBox16.Text = dr["Remuneracion_basica"].ToString();
+                comboBox3.Text = dr["Condicion_contrato"].ToString();
+                radDateTimePicker3.Value = Convert.ToDateTime(dr["Inicio_contrato"].ToString());
+                radDateTimePicker4.Value = Convert.ToDateTime(dr["Fin_contrato"].ToString());
+                radRichTextEditor1.Text = dr["Observacion"].ToString();
+                
+                MessageBox.Show("Datos obtenidos correctamente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Error al obtener los datos", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+        }
+
+        private void radButton4_Click(object sender, EventArgs e)
+        {
+            string codigo = this.dataGridView2.CurrentRow.Cells[0].Value.ToString();
+
+            coneccion conn = new coneccion();
+            if (ConnectionState.Closed == conn.conn.State)
+            {
+                conn.conn.Open();
+            }
+
+            SqlCommand cmd = new SqlCommand("truncar_contrato_personal", conn.conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@codigo", codigo);
+            
+            
+            try
+
+            {
+                SqlDataReader dr = cmd.ExecuteReader();
+                MessageBox.Show("Contrato cancelado corectamente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                mostrar_contratos(radTextBox13.Text);
+                conn.conn.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Error al cancelar el contrato", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

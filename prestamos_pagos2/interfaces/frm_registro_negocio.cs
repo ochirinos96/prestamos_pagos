@@ -86,11 +86,11 @@ namespace prestamos_pagos2.interfaces
             cmd.Parameters.AddWithValue("@u_liquida", radTextBox21.Text.ToString());
             cmd.Parameters.AddWithValue("@Terminal", Environment.MachineName);
             cmd.Parameters.AddWithValue("@Dni_registro", dni_login);
-
+            
             try
             {
-                SqlDataReader dr = cmd.ExecuteReader();
 
+                SqlDataReader dr = cmd.ExecuteReader();
                 MessageBox.Show("Datos registrados corectamente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
@@ -182,10 +182,10 @@ namespace prestamos_pagos2.interfaces
                 // especificamos en que fila se mostrará cada registro
                 // nombredeldatagrid.filas[numerodefila].celdas[nombredelacelda].valor=
                 // dr.tipodedatosalmacenado(dr.getordinal(nombredelcampo_en_la_base_de_datos)conviertelo_a_string_sino_es_del_tipo_string);
-                dataGridView2.Rows[renglon].Cells["Column5"].Value = dr.GetString(dr.GetOrdinal("Dni")).ToString();
-                dataGridView2.Rows[renglon].Cells["Column6"].Value = dr.GetInt32(dr.GetOrdinal("Nombres")).ToString();
-                dataGridView2.Rows[renglon].Cells["Column7"].Value = dr.GetString(dr.GetOrdinal("apellidos")).ToString();
-                dataGridView2.Rows[renglon].Cells["Column8"].Value = dr.GetString(dr.GetOrdinal("Celular")).ToString();
+                dataGridView2.Rows[renglon].Cells["Column5"].Value = dr.GetString(dr.GetOrdinal("Codigo_negocio")).ToString();
+                dataGridView2.Rows[renglon].Cells["Column6"].Value = dr.GetString(dr.GetOrdinal("Ruc")).ToString();
+                dataGridView2.Rows[renglon].Cells["Column7"].Value = dr.GetString(dr.GetOrdinal("Nombre_negocio")).ToString();
+                dataGridView2.Rows[renglon].Cells["Column8"].Value = dr.GetString(dr.GetOrdinal("Direccion")).ToString();
 
             }
 
