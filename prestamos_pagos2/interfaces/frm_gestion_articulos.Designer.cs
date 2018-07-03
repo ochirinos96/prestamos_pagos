@@ -28,16 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_gestion_articulos));
             this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
             this.radTextBox6 = new Telerik.WinControls.UI.RadTextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.radButton2 = new Telerik.WinControls.UI.RadButton();
             this.radTextBox5 = new Telerik.WinControls.UI.RadTextBox();
@@ -68,12 +64,22 @@
             this.radButton7 = new Telerik.WinControls.UI.RadButton();
             this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
             this.radTextBox23 = new Telerik.WinControls.UI.RadTextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.radTextBox7 = new Telerik.WinControls.UI.RadTextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.radButton3 = new Telerik.WinControls.UI.RadButton();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox5)).BeginInit();
@@ -90,6 +96,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.radButton7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radTextBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,9 +129,9 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.dataGridView1);
             this.tabPage4.Controls.Add(this.radLabel4);
             this.tabPage4.Controls.Add(this.radTextBox6);
-            this.tabPage4.Controls.Add(this.dataGridView1);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
@@ -147,45 +157,13 @@
             this.radTextBox6.TabIndex = 73;
             this.radTextBox6.TextChanged += new System.EventHandler(this.radTextBox6_TextChanged);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4});
-            this.dataGridView1.Location = new System.Drawing.Point(68, 108);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(735, 294);
-            this.dataGridView1.TabIndex = 72;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "DNI";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Nombres";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 250;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Apellidos";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 250;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Telefono";
-            this.Column4.Name = "Column4";
-            // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Controls.Add(this.radButton3);
+            this.tabPage2.Controls.Add(this.pictureBox1);
+            this.tabPage2.Controls.Add(this.radTextBox7);
+            this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.radButton2);
             this.tabPage2.Controls.Add(this.radTextBox5);
             this.tabPage2.Controls.Add(this.label6);
@@ -212,7 +190,7 @@
             // 
             // radButton2
             // 
-            this.radButton2.Location = new System.Drawing.Point(689, 332);
+            this.radButton2.Location = new System.Drawing.Point(530, 331);
             this.radButton2.Name = "radButton2";
             this.radButton2.Size = new System.Drawing.Size(165, 36);
             this.radButton2.TabIndex = 104;
@@ -221,7 +199,7 @@
             // 
             // radTextBox5
             // 
-            this.radTextBox5.Location = new System.Drawing.Point(831, 262);
+            this.radTextBox5.Location = new System.Drawing.Point(672, 261);
             this.radTextBox5.Name = "radTextBox5";
             this.radTextBox5.Size = new System.Drawing.Size(265, 24);
             this.radTextBox5.TabIndex = 103;
@@ -230,7 +208,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(685, 268);
+            this.label6.Location = new System.Drawing.Point(526, 267);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(81, 13);
             this.label6.TabIndex = 102;
@@ -238,7 +216,7 @@
             // 
             // radTextBox4
             // 
-            this.radTextBox4.Location = new System.Drawing.Point(831, 72);
+            this.radTextBox4.Location = new System.Drawing.Point(672, 106);
             this.radTextBox4.Name = "radTextBox4";
             this.radTextBox4.Size = new System.Drawing.Size(265, 24);
             this.radTextBox4.TabIndex = 101;
@@ -247,7 +225,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(748, 78);
+            this.label5.Location = new System.Drawing.Point(589, 112);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(43, 13);
             this.label5.TabIndex = 100;
@@ -255,7 +233,7 @@
             // 
             // radButton1
             // 
-            this.radButton1.Location = new System.Drawing.Point(931, 332);
+            this.radButton1.Location = new System.Drawing.Point(772, 331);
             this.radButton1.Name = "radButton1";
             this.radButton1.Size = new System.Drawing.Size(165, 36);
             this.radButton1.TabIndex = 99;
@@ -265,7 +243,7 @@
             // radDateTimePicker2
             // 
             this.radDateTimePicker2.CalendarSize = new System.Drawing.Size(300, 300);
-            this.radDateTimePicker2.Location = new System.Drawing.Point(831, 224);
+            this.radDateTimePicker2.Location = new System.Drawing.Point(672, 223);
             this.radDateTimePicker2.Name = "radDateTimePicker2";
             this.radDateTimePicker2.Size = new System.Drawing.Size(265, 24);
             this.radDateTimePicker2.TabIndex = 98;
@@ -277,7 +255,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(696, 230);
+            this.label4.Location = new System.Drawing.Point(537, 229);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 13);
             this.label4.TabIndex = 93;
@@ -285,7 +263,7 @@
             // 
             // radTextBox3
             // 
-            this.radTextBox3.Location = new System.Drawing.Point(831, 186);
+            this.radTextBox3.Location = new System.Drawing.Point(672, 185);
             this.radTextBox3.Name = "radTextBox3";
             this.radTextBox3.Size = new System.Drawing.Size(265, 24);
             this.radTextBox3.TabIndex = 96;
@@ -294,7 +272,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(693, 190);
+            this.label3.Location = new System.Drawing.Point(534, 189);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 13);
             this.label3.TabIndex = 94;
@@ -302,7 +280,7 @@
             // 
             // radTextBox2
             // 
-            this.radTextBox2.Location = new System.Drawing.Point(831, 148);
+            this.radTextBox2.Location = new System.Drawing.Point(672, 70);
             this.radTextBox2.Name = "radTextBox2";
             this.radTextBox2.Size = new System.Drawing.Size(265, 24);
             this.radTextBox2.TabIndex = 97;
@@ -311,7 +289,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(734, 152);
+            this.label2.Location = new System.Drawing.Point(575, 74);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 95;
@@ -319,7 +297,7 @@
             // 
             // radTextBox1
             // 
-            this.radTextBox1.Location = new System.Drawing.Point(831, 110);
+            this.radTextBox1.Location = new System.Drawing.Point(672, 144);
             this.radTextBox1.Name = "radTextBox1";
             this.radTextBox1.Size = new System.Drawing.Size(265, 24);
             this.radTextBox1.TabIndex = 92;
@@ -328,7 +306,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(741, 116);
+            this.label1.Location = new System.Drawing.Point(582, 150);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 91;
@@ -345,7 +323,7 @@
             this.dataGridView2.Location = new System.Drawing.Point(41, 36);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 28;
-            this.dataGridView2.Size = new System.Drawing.Size(581, 350);
+            this.dataGridView2.Size = new System.Drawing.Size(424, 350);
             this.dataGridView2.TabIndex = 90;
             // 
             // dataGridViewTextBoxColumn1
@@ -454,6 +432,101 @@
             this.radTextBox23.TabIndex = 40;
             this.radTextBox23.ThemeName = "TelerikMetro";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.column1,
+            this.column2,
+            this.column3,
+            this.column5,
+            this.column6});
+            this.dataGridView1.Location = new System.Drawing.Point(68, 104);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 28;
+            this.dataGridView1.Size = new System.Drawing.Size(735, 308);
+            this.dataGridView1.TabIndex = 75;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
+            // 
+            // column1
+            // 
+            this.column1.HeaderText = "DNI";
+            this.column1.Name = "column1";
+            // 
+            // column2
+            // 
+            this.column2.HeaderText = "Nombres";
+            this.column2.Name = "column2";
+            this.column2.Width = 200;
+            // 
+            // column3
+            // 
+            this.column3.HeaderText = "Apellidos";
+            this.column3.Name = "column3";
+            this.column3.Width = 200;
+            // 
+            // column5
+            // 
+            this.column5.HeaderText = "Telefono";
+            this.column5.Name = "column5";
+            // 
+            // column6
+            // 
+            this.column6.HeaderText = "Celular";
+            this.column6.Name = "column6";
+            // 
+            // radTextBox7
+            // 
+            this.radTextBox7.Location = new System.Drawing.Point(672, 35);
+            this.radTextBox7.Name = "radTextBox7";
+            this.radTextBox7.Size = new System.Drawing.Size(265, 24);
+            this.radTextBox7.TabIndex = 103;
+            this.radTextBox7.ThemeName = "TelerikMetro";
+            this.radTextBox7.TextChanged += new System.EventHandler(this.radTextBox7_TextChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(589, 41);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(29, 13);
+            this.label7.TabIndex = 102;
+            this.label7.Text = "DNI:";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(973, 36);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(132, 144);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 105;
+            this.pictureBox1.TabStop = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(1036, 182);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(10, 20);
+            this.textBox1.TabIndex = 107;
+            this.textBox1.Text = "Foto\\default_image.png";
+            // 
+            // radButton3
+            // 
+            this.radButton3.Enabled = false;
+            this.radButton3.Location = new System.Drawing.Point(993, 208);
+            this.radButton3.Name = "radButton3";
+            this.radButton3.Size = new System.Drawing.Size(100, 31);
+            this.radButton3.TabIndex = 106;
+            this.radButton3.Text = "Agregar";
+            this.radButton3.ThemeName = "TelerikMetro";
+            // 
             // frm_gestion_articulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -475,7 +548,6 @@
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radButton2)).EndInit();
@@ -494,6 +566,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.radButton7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radTextBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
@@ -512,11 +588,6 @@
         private System.Windows.Forms.TabPage tabPage4;
         private Telerik.WinControls.UI.RadLabel radLabel4;
         private Telerik.WinControls.UI.RadTextBox radTextBox6;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private Telerik.WinControls.UI.RadButton radButton2;
         private Telerik.WinControls.UI.RadTextBox radTextBox5;
         private System.Windows.Forms.Label label6;
@@ -541,5 +612,16 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column6;
+        private Telerik.WinControls.UI.RadTextBox radTextBox7;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox textBox1;
+        private Telerik.WinControls.UI.RadButton radButton3;
     }
 }

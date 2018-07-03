@@ -80,5 +80,12 @@ namespace prestamos_pagos2.interfaces
             personal.MdiParent = this;
             personal.Show();
         }
+
+        private void radButtonElement8_Click(object sender, EventArgs e)
+        {
+            frm_gestion_articulos personal = new frm_gestion_articulos(dni_login);
+            personal.MdiParent = this;
+            personal.Show();
+        }
     }
 }
