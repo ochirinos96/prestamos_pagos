@@ -255,7 +255,7 @@
             this.radTextBox22.Name = "radTextBox22";
             this.radTextBox22.Size = new System.Drawing.Size(304, 24);
             this.radTextBox22.TabIndex = 22;
-            this.radTextBox22.Text = "0,00";
+            this.radTextBox22.Text = "0";
             this.radTextBox22.ThemeName = "ControlDefault";
             this.radTextBox22.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.radTextBox22_KeyPress);
             // 
