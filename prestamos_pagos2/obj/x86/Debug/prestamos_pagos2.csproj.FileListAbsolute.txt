@@ -202,3 +202,5 @@ C:\Users\USER\Source\Repos\prestamos_pagos\prestamos_pagos2\bin\Debug\prestamos_
 C:\Users\USER\Source\Repos\prestamos_pagos\prestamos_pagos2\bin\Debug\prestamos_pagos2.application
 C:\Users\USER\Source\Repos\prestamos_pagos\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.exe.manifest
 C:\Users\USER\Source\Repos\prestamos_pagos\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.application
+C:\Users\USER\Source\Repos\prestamos_pagos\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.subformnegocio.resources
+C:\Users\USER\Source\Repos\prestamos_pagos\prestamos_pagos2\obj\x86\Debug\prestamos_pagos2.interfaces.subfrmarticulos.resources
