@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="prestamos_pagos2.exe" size="435200">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="prestamos_pagos2.exe" size="426496">
       <assemblyIdentity name="prestamos_pagos2" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>okhvXubhq2L2TPuurAH5ZVeiRNxH554JUVYArkbpZ/U=</dsig:DigestValue>
+        <dsig:DigestValue>CyvZTg9EgqmlD82fUHzzHSdz4Q42TL7pB4ygEoI6SkQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
